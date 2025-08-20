@@ -1,4 +1,4 @@
-# Day 3 – Setting up Cloud Project Environment
+# Day 2 – Setting up Cloud Project Environment
 
 Today I set up the basic cloud project environment for my first project.  
 
