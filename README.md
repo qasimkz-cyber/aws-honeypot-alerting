@@ -3,6 +3,12 @@ Hands-on cloud security project deploying a honeypot in AWS with logging, monito
 
 
 
+
+
+
+
+
+
 Results & Findings
 The honeypot system was a success. Within minutes of the EC2 instance going live, the CloudWatch alarm was triggered and a real-time alert was sent via email, confirming the end-to-end pipeline was fully operational.
 
