@@ -4,7 +4,7 @@ resource "aws_cloudwatch_log_group" "vpc_flow_logs" {
   retention_in_days = 7 # Keep logs for 7 days
 }
 
-# 2. This finds your default VPC (Virtual Private Cloud)
+# 2. This finds default VPC (Virtual Private Cloud)
 data "aws_vpc" "default" {
   default = true
 }
@@ -35,7 +35,7 @@ resource "aws_sns_topic" "honeypot_alerts" {
   name = "honeypot-alerts-topic"
 }
 
-# 6. Your email subscription to the topic
+# 6. my email subscription to the topic
 resource "aws_sns_topic_subscription" "email_subscription" {
   topic_arn = aws_sns_topic.honeypot_alerts.arn
   protocol  = "email"
